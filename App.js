@@ -7,6 +7,7 @@ import {
   Keyboard,
 } from "react-native";
 import RegistrationScreen from "./components/Screens/RegistrationScreen.jsx";
+import LoginScreen from "./components/Screens/LoginScreen.jsx";
 
 export default function App() {
   return (
@@ -20,7 +21,8 @@ export default function App() {
           style={styles.image}
           source={require("./assets/images/photo-bg.png")}
         >
-          <RegistrationScreen />
+          {/* <RegistrationScreen /> */}
+          <LoginScreen />
         </ImageBackground>
         <StatusBar style="auto" />
       </View>
@@ -31,9 +33,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#fff",
-    // alignItems: "center",
-    // justifyContent: "center",
   },
   image: {
     flex: 1,
